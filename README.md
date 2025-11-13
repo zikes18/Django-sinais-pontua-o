@@ -25,7 +25,41 @@ O objetivo é mapear cada sinal gráfico (ex: vírgula) à sua função gramatic
 ---
 
 ## 🏗️ Estrutura do Projeto
-catalogo_gramatical/ ├── .env # <-- ARQUIVO SECRETO DE VARIÁVEIS (NÃO VA PARA O GIT) ├── .gitignore # Ignora arquivos (como .env, venv/) ├── manage.py # Utilitário de gerenciamento do Django ├── requirements.txt # Lista de dependências Python ├── README.md # Este arquivo │ ├── catalogo_gramatical/ # Pasta principal do projeto │ ├── settings.py # Configurações do projeto (lê o .env) │ ├── urls.py # URLs globais (aponta para 'gramatica.urls') │ └── ... │ ├── gramatica/ # App "gramatica" │ ├── models.py # Define as tabelas (SinalDePontuacao, etc.) │ ├── views.py # Lógica (funções lista_regras e analisador_view) │ ├── urls.py # URLs do app (lista_regras e analisador) │ ├── admin.py # Configuração da interface /admin │ ├── migrations/ # Histórico de migrações do banco de dados │ └── fixtures/ │ └── gramatica_completa.json # Arquivo de dados iniciais │ ├── templates/ # Pasta de templates HTML │ ├── base.html # Template mestre (inclui header, footer e CSS) │ ├── partials/ │ │ ├── _header.html # Cabeçalho (com navegação e logo) │ │ └── _footer.html # Rodapé │ └── gramatica/ │ ├── lista_regras.html # Página do catálogo de regras │ └── analisador.html # Página do analisador de texto │ └── static/ # Pasta de arquivos estáticos ├── css/ │ └── style.css # Folha de estilo "aconchegante" └── img/ └── logo.png # Logo do site (fundo transparente)
+catalogo_gramatical/
+├── .env # Arquivo de variáveis secretas (NÃO VAI PARA O GIT)
+├── .gitignore # Arquivos ignorados pelo Git
+├── manage.py # Utilitário principal do Django
+├── requirements.txt # Dependências do projeto
+├── README.md
+│
+├── catalogo_gramatical/ # Núcleo do projeto Django
+│ ├── settings.py # Configurações (lê o .env)
+│ ├── urls.py # URLs globais
+│ └── ...
+│
+├── gramatica/ # Aplicação principal
+│ ├── models.py # Modelos (SinalDePontuacao etc.)
+│ ├── views.py # Lógica das views
+│ ├── urls.py # URLs do app
+│ ├── admin.py # Configuração do Django Admin
+│ ├── migrations/ # Migrações do banco
+│ └── fixtures/
+│ └── gramatica_completa.json # Dados iniciais
+│
+├── templates/
+│ ├── base.html
+│ ├── partials/
+│ │ ├── _header.html
+│ │ └── _footer.html
+│ └── gramatica/
+│ ├── lista_regras.html
+│ └── analisador.html
+│
+└── static/
+├── css/
+│ └── style.css
+└── img/
+└── logo.png
 ---
 
 ## 🚀 Instalação e Execução
@@ -40,7 +74,7 @@ Siga estes passos para configurar e executar o projeto em seu ambiente local.
 
 ### 2. Clonar o Repositório
 
-``bash
+```bash
 git clone https://[URL-DO-SEU-REPOSITORIO].git
 cd catalogo_gramatical
 
