@@ -1,0 +1,753 @@
+[
+  {
+    "model": "gramatica.sinaldepontuacao",
+    "pk": 1,
+    "fields": {
+      "sinal_grafico": ",",
+      "nome": "Vírgula",
+      "descricao": "Indica uma pausa breve. Usada para separar ou isolar termos na oração."
+    }
+  },
+  {
+    "model": "gramatica.sinaldepontuacao",
+    "pk": 2,
+    "fields": {
+      "sinal_grafico": ";",
+      "nome": "Ponto e Vírgula",
+      "descricao": "Indica uma pausa mais forte que a vírgula, mas menor que o ponto final."
+    }
+  },
+  {
+    "model": "gramatica.sinaldepontuacao",
+    "pk": 3,
+    "fields": {
+      "sinal_grafico": ":",
+      "nome": "Dois Pontos",
+      "descricao": "Usado para introduzir uma citação, enumeração, explicação ou consequência."
+    }
+  },
+  {
+    "model": "gramatica.sinaldepontuacao",
+    "pk": 4,
+    "fields": {
+      "sinal_grafico": ".",
+      "nome": "Ponto Final",
+      "descricao": "Indica o fim de um período declarativo ou imperativo."
+    }
+  },
+  {
+    "model": "gramatica.sinaldepontuacao",
+    "pk": 5,
+    "fields": {
+      "sinal_grafico": "?",
+      "nome": "Ponto de Interrogação",
+      "descricao": "Indica o fim de um período interrogativo direto."
+    }
+  },
+  {
+    "model": "gramatica.sinaldepontuacao",
+    "pk": 6,
+    "fields": {
+      "sinal_grafico": "!",
+      "nome": "Ponto de Exclamação",
+      "descricao": "Usado para denotar emoção, ênfase, ou no fim de frases imperativas."
+    }
+  },
+  {
+    "model": "gramatica.sinaldepontuacao",
+    "pk": 7,
+    "fields": {
+      "sinal_grafico": "—",
+      "nome": "Travessão",
+      "descricao": "Usado para isolar termos (com ênfase), indicar diálogo ou separar orações intercaladas."
+    }
+  },
+  {
+    "model": "gramatica.sinaldepontuacao",
+    "pk": 8,
+    "fields": {
+      "sinal_grafico": "()",
+      "nome": "Parênteses",
+      "descricao": "Usados para intercalar informações acessórias, explicações ou apartes."
+    }
+  },
+  {
+    "model": "gramatica.sinaldepontuacao",
+    "pk": 9,
+    "fields": {
+      "sinal_grafico": "[]",
+      "nome": "Colchetes",
+      "descricao": "Usados para intervenções ou comentários do editor/transcritor em citações."
+    }
+  },
+  {
+    "model": "gramatica.sinaldepontuacao",
+    "pk": 10,
+    "fields": {
+      "sinal_grafico": "\"",
+      "nome": "Aspas",
+      "descricao": "Usadas para isolar citações diretas, neologismos, estrangeirismos ou termos com ironia."
+    }
+  },
+  {
+    "model": "gramatica.sinaldepontuacao",
+    "pk": 11,
+    "fields": {
+      "sinal_grafico": "...",
+      "nome": "Reticências",
+      "descricao": "Indicam interrupção, hesitação ou omissão de trecho."
+    }
+  },
+  {
+    "model": "gramatica.sinaldepontuacao",
+    "pk": 12,
+    "fields": {
+      "sinal_grafico": "/",
+      "nome": "Barra",
+      "descricao": "Usada para indicar alternância (e/ou) ou separar datas."
+    }
+  },
+  {
+    "model": "gramatica.estruturasintatica",
+    "pk": 1,
+    "fields": {
+      "nome": "Vocativo",
+      "descricao": "Termo que serve para chamar, invocar ou interpelar o interlocutor."
+    }
+  },
+  {
+    "model": "gramatica.estruturasintatica",
+    "pk": 2,
+    "fields": {
+      "nome": "Aposto",
+      "descricao": "Termo acessório que explica, desenvolve, resume ou especifica um substantivo anterior."
+    }
+  },
+  {
+    "model": "gramatica.estruturasintatica",
+    "pk": 3,
+    "fields": {
+      "nome": "Enumeração (Termos de mesma função)",
+      "descricao": "Sequência de termos que exercem a mesma função sintática (sujeitos, objetos, etc.)."
+    }
+  },
+  {
+    "model": "gramatica.estruturasintatica",
+    "pk": 4,
+    "fields": {
+      "nome": "Adjunto Adverbial Deslocado",
+      "descricao": "Termo que indica circunstância (tempo, lugar, modo) posicionado fora da ordem direta."
+    }
+  },
+  {
+    "model": "gramatica.estruturasintatica",
+    "pk": 5,
+    "fields": {
+      "nome": "Oração Coordenada Assindética",
+      "descricao": "Oração coordenada ligada a outra sem o uso de conjunção."
+    }
+  },
+  {
+    "model": "gramatica.estruturasintatica",
+    "pk": 6,
+    "fields": {
+      "nome": "Oração Coordenada Sindética",
+      "descricao": "Oração coordenada introduzida por conjunção (adversativa, conclusiva, explicativa)."
+    }
+  },
+  {
+    "model": "gramatica.estruturasintatica",
+    "pk": 7,
+    "fields": {
+      "nome": "Oração Subordinada Adverbial Deslocada",
+      "descricao": "Oração adverbial (temporal, causal, etc.) que antecede a oração principal."
+    }
+  },
+  {
+    "model": "gramatica.estruturasintatica",
+    "pk": 8,
+    "fields": {
+      "nome": "Oração Subordinada Adjetiva Explicativa",
+      "descricao": "Oração que adiciona uma qualidade acessória ao antecedente, sendo separada por vírgulas."
+    }
+  },
+  {
+    "model": "gramatica.estruturasintatica",
+    "pk": 9,
+    "fields": {
+      "nome": "Elipse Verbal (Zeugma)",
+      "descricao": "Omissão de um verbo já mencionado anteriormente."
+    }
+  },
+  {
+    "model": "gramatica.estruturasintatica",
+    "pk": 10,
+    "fields": {
+      "nome": "Datas e Endereços",
+      "descricao": "Separação de localidade, data ou partes de um endereço."
+    }
+  },
+  {
+    "model": "gramatica.estruturasintatica",
+    "pk": 11,
+    "fields": {
+      "nome": "Período (Encerramento)",
+      "descricao": "Frase organizada em uma ou mais orações, encerrada por pontuação final."
+    }
+  },
+  {
+    "model": "gramatica.estruturasintatica",
+    "pk": 12,
+    "fields": {
+      "nome": "Interrogação Direta",
+      "descricao": "Frase que encerra uma pergunta direta."
+    }
+  },
+  {
+    "model": "gramatica.estruturasintatica",
+    "pk": 13,
+    "fields": {
+      "nome": "Ênfase ou Emoção",
+      "descricao": "Marca de entonação exclamativa, surpresa, ordem enfática."
+    }
+  },
+  {
+    "model": "gramatica.estruturasintatica",
+    "pk": 14,
+    "fields": {
+      "nome": "Citação Direta",
+      "descricao": "Reprodução exata da fala de outra pessoa."
+    }
+  },
+  {
+    "model": "gramatica.estruturasintatica",
+    "pk": 15,
+    "fields": {
+      "nome": "Explicação ou Consequência",
+      "descricao": "Oração que explica, justifica ou é consequência da anterior."
+    }
+  },
+  {
+    "model": "gramatica.estruturasintatica",
+    "pk": 16,
+    "fields": {
+      "nome": "Enumeração Complexa",
+      "descricao": "Lista de itens que, por si sós, já contêm vírgulas, exigindo um separador mais forte."
+    }
+  },
+  {
+    "model": "gramatica.estruturasintatica",
+    "pk": 17,
+    "fields": {
+      "nome": "Itens de Leis, Decretos ou Listas",
+      "descricao": "Separação de incisos, artigos ou itens de uma lista vertical."
+    }
+  },
+  {
+    "model": "gramatica.estruturasintatica",
+    "pk": 18,
+    "fields": {
+      "nome": "Diálogo (Marca de Fala)",
+      "descricao": "Indica o início da fala de um personagem ou a mudança de interlocutor."
+    }
+  },
+  {
+    "model": "gramatica.estruturasintatica",
+    "pk": 19,
+    "fields": {
+      "nome": "Informação Acessória (Intercalação)",
+      "descricao": "Explicação, comentário, ou dado secundário intercalado no período."
+    }
+  },
+  {
+    "model": "gramatica.estruturasintatica",
+    "pk": 20,
+    "fields": {
+      "nome": "Intervenção em Citação",
+      "descricao": "Acréscimo, omissão ou comentário do autor/transcritor dentro de uma citação."
+    }
+  },
+  {
+    "model": "gramatica.estruturasintatica",
+    "pk": 21,
+    "fields": {
+      "nome": "Estrangeirismo, Neologismo ou Gíria",
+      "descricao": "Palavra ou expressão que foge à norma culta, sendo destacada."
+    }
+  },
+  {
+    "model": "gramatica.estruturasintatica",
+    "pk": 22,
+    "fields": {
+      "nome": "Ironia ou Destaque Semântico",
+      "descricao": "Uso de uma palavra em sentido irônico, metafórico ou destacado."
+    }
+  },
+  {
+    "model": "gramatica.estruturasintatica",
+    "pk": 23,
+    "fields": {
+      "nome": "Interrupção de Pensamento",
+      "descricao": "Indica suspensão, dúvida, hesitação ou que o pensamento foi interrompido."
+    }
+  },
+  {
+    "model": "gramatica.estruturasintatica",
+    "pk": 24,
+    "fields": {
+      "nome": "Alternância (ou/e)",
+      "descricao": "Indica uma escolha ou equivalência entre dois termos."
+    }
+  },
+  {
+    "model": "gramatica.mapeamentofuncao",
+    "pk": 1,
+    "fields": {
+      "sinal": 1,
+      "estrutura": 1,
+      "funcao_gramatical": "Isolar o Vocativo",
+      "exemplo_de_uso": "Ana, venha ver isto!",
+      "observacoes": "O vocativo pode vir no início, meio ou fim da frase."
+    }
+  },
+  {
+    "model": "gramatica.mapeamentofuncao",
+    "pk": 2,
+    "fields": {
+      "sinal": 1,
+      "estrutura": 2,
+      "funcao_gramatical": "Isolar o Aposto Explicativo",
+      "exemplo_de_uso": "Jorge Amado, grande escritor baiano, marcou a literatura.",
+      "observacoes": null
+    }
+  },
+  {
+    "model": "gramatica.mapeamentofuncao",
+    "pk": 3,
+    "fields": {
+      "sinal": 1,
+      "estrutura": 3,
+      "funcao_gramatical": "Separar Termos de uma Enumeração",
+      "exemplo_de_uso": "Preciso comprar pão, leite, frutas e café.",
+      "observacoes": null
+    }
+  },
+  {
+    "model": "gramatica.mapeamentofuncao",
+    "pk": 4,
+    "fields": {
+      "sinal": 1,
+      "estrutura": 4,
+      "funcao_gramatical": "Isolar Adjunto Adverbial Deslocado (de longa extensão)",
+      "exemplo_de_uso": "Naquela manhã chuvosa de inverno, todos decidiram ficar em casa.",
+      "observacoes": "Para adjuntos curtos (ex: 'Hoje'), a vírgula é opcional."
+    }
+  },
+  {
+    "model": "gramatica.mapeamentofuncao",
+    "pk": 5,
+    "fields": {
+      "sinal": 1,
+      "estrutura": 5,
+      "funcao_gramatical": "Separar Orações Coordenadas Assindéticas",
+      "exemplo_de_uso": "Cheguei, vi, venci.",
+      "observacoes": "A vírgula marca a pausa no lugar da conjunção omitida."
+    }
+  },
+  {
+    "model": "gramatica.mapeamentofuncao",
+    "pk": 6,
+    "fields": {
+      "sinal": 1,
+      "estrutura": 6,
+      "funcao_gramatical": "Separar Oração Coordenada Sindética (Adversativa)",
+      "exemplo_de_uso": "O time jogou bem, mas perdeu o jogo.",
+      "observacoes": "Quase sempre obrigatória antes de 'mas', 'porém', 'contudo', etc."
+    }
+  },
+  {
+    "model": "gramatica.mapeamentofuncao",
+    "pk": 7,
+    "fields": {
+      "sinal": 1,
+      "estrutura": 6,
+      "funcao_gramatical": "Separar Oração Coordenada Sindética (Conclusiva)",
+      "exemplo_de_uso": "Penso, logo existo.",
+      "observacoes": "Obrigatória antes de conclusivas ('logo', 'portanto')."
+    }
+  },
+  {
+    "model": "gramatica.mapeamentofuncao",
+    "pk": 8,
+    "fields": {
+      "sinal": 1,
+      "estrutura": 7,
+      "funcao_gramatical": "Isolar Oração Subordinada Adverbial Deslocada",
+      "exemplo_de_uso": "Quando o sol nasceu, os pássaros cantaram.",
+      "observacoes": "Se a oração adverbial estiver no fim (ordem direta), a vírgula é geralmente dispensada."
+    }
+  },
+  {
+    "model": "gramatica.mapeamentofuncao",
+    "pk": 9,
+    "fields": {
+      "sinal": 1,
+      "estrutura": 8,
+      "funcao_gramatical": "Isolar Oração Adjetiva Explicativa",
+      "exemplo_de_uso": "O homem, que é um ser racional, domina a natureza.",
+      "observacoes": "A ausência das vírgulas mudaria o sentido (seria 'restritiva')."
+    }
+  },
+  {
+    "model": "gramatica.mapeamentofuncao",
+    "pk": 10,
+    "fields": {
+      "sinal": 1,
+      "estrutura": 9,
+      "funcao_gramatical": "Marcar Elipse Verbal (Zeugma)",
+      "exemplo_de_uso": "Eu prefiro cinema; meu irmão, teatro.",
+      "observacoes": "Neste caso, a vírgula marca a omissão do verbo 'prefere'. O ponto e vírgula separa as orações."
+    }
+  },
+  {
+    "model": "gramatica.mapeamentofuncao",
+    "pk": 11,
+    "fields": {
+      "sinal": 1,
+      "estrutura": 10,
+      "funcao_gramatical": "Separar Localidade de Data",
+      "exemplo_de_uso": "Brasília, 13 de novembro de 2025.",
+      "observacoes": null
+    }
+  },
+  {
+    "model": "gramatica.mapeamentofuncao",
+    "pk": 12,
+    "fields": {
+      "sinal": 2,
+      "estrutura": 16,
+      "funcao_gramatical": "Separar itens de Enumeração Complexa",
+      "exemplo_de_uso": "Participaram da reunião: Ana, diretora de marketing; Bruno, gerente de TI; e Carla, analista financeira.",
+      "observacoes": "Usado quando os próprios itens da enumeração já contêm vírgulas."
+    }
+  },
+  {
+    "model": "gramatica.mapeamentofuncao",
+    "pk": 13,
+    "fields": {
+      "sinal": 2,
+      "estrutura": 5,
+      "funcao_gramatical": "Separar Orações Coordenadas (com pausas fortes)",
+      "exemplo_de_uso": "O sol, fonte de toda a vida, brilhava intensamente; os pássaros, alegres, cantavam nas árvores.",
+      "observacoes": "Usado para separar orações que já possuem vírgulas internas, evitando confusão."
+    }
+  },
+  {
+    "model": "gramatica.mapeamentofuncao",
+    "pk": 14,
+    "fields": {
+      "sinal": 2,
+      "estrutura": 17,
+      "funcao_gramatical": "Separar Itens de Leis ou Listas",
+      "exemplo_de_uso": "Art. 1º São poderes da União, independentes e harmônicos entre si:\nI - o Legislativo;\nII - o Executivo;\nIII - o Judiciário.",
+      "observacoes": "Muito comum em textos jurídicos e listas formais."
+    }
+  },
+  {
+    "model": "gramatica.mapeamentofuncao",
+    "pk": 15,
+    "fields": {
+      "sinal": 3,
+      "estrutura": 3,
+      "funcao_gramatical": "Introduzir Enumeração",
+      "exemplo_de_uso": "Meus hobbies são três: ler, caminhar e programar.",
+      "observacoes": null
+    }
+  },
+  {
+    "model": "gramatica.mapeamentofuncao",
+    "pk": 16,
+    "fields": {
+      "sinal": 3,
+      "estrutura": 2,
+      "funcao_gramatical": "Introduzir Aposto Enumerativo ou Resumitivo",
+      "exemplo_de_uso": "Ele tinha um sonho: a paz mundial.",
+      "observacoes": null
+    }
+  },
+  {
+    "model": "gramatica.mapeamentofuncao",
+    "pk": 17,
+    "fields": {
+      "sinal": 3,
+      "estrutura": 14,
+      "funcao_gramatical": "Introduzir Citação Direta",
+      "exemplo_de_uso": "O professor advertiu: 'Estudem para a prova!'",
+      "observacoes": null
+    }
+  },
+  {
+    "model": "gramatica.mapeamentofuncao",
+    "pk": 18,
+    "fields": {
+      "sinal": 3,
+      "estrutura": 15,
+      "funcao_gramatical": "Introduzir Explicação ou Consequência",
+      "exemplo_de_uso": "O resultado foi desastroso: todos foram demitidos.",
+      "observacoes": "A segunda oração explica ou é consequência da primeira."
+    }
+  },
+  {
+    "model": "gramatica.mapeamentofuncao",
+    "pk": 19,
+    "fields": {
+      "sinal": 4,
+      "estrutura": 11,
+      "funcao_gramatical": "Encerrar Período (Declarativo/Imperativo)",
+      "exemplo_de_uso": "O estudo da gramática é fundamental.",
+      "observacoes": "Encerra a unidade sintática e semântica completa."
+    }
+  },
+  {
+    "model": "gramatica.mapeamentofuncao",
+    "pk": 20,
+    "fields": {
+      "sinal": 5,
+      "estrutura": 12,
+      "funcao_gramatical": "Encerrar Período (Interrogação Direta)",
+      "exemplo_de_uso": "Você concluiu o projeto?",
+      "observacoes": "Usado apenas em perguntas diretas."
+    }
+  },
+  {
+    "model": "gramatica.mapeamentofuncao",
+    "pk": 21,
+    "fields": {
+      "sinal": 6,
+      "estrutura": 13,
+      "funcao_gramatical": "Indicar Ênfase ou Emoção (Exclamação)",
+      "exemplo_de_uso": "Que dia maravilhoso!",
+      "observacoes": null
+    }
+  },
+  {
+    "model": "gramatica.mapeamentofuncao",
+    "pk": 22,
+    "fields": {
+      "sinal": 6,
+      "estrutura": 13,
+      "funcao_gramatical": "Indicar Ordem (Modo Imperativo)",
+      "exemplo_de_uso": "Saia daqui agora!",
+      "observacoes": "Reforça a entonação imperativa."
+    }
+  },
+  {
+    "model": "gramatica.mapeamentofuncao",
+    "pk": 23,
+    "fields": {
+      "sinal": 7,
+      "estrutura": 18,
+      "funcao_gramatical": "Indicar Início de Fala (Diálogo)",
+      "exemplo_de_uso": "— Onde você estava?\n— Eu estava na biblioteca.",
+      "observacoes": "Usado para iniciar a fala de um personagem."
+    }
+  },
+  {
+    "model": "gramatica.mapeamentofuncao",
+    "pk": 24,
+    "fields": {
+      "sinal": 7,
+      "estrutura": 2,
+      "funcao_gramatical": "Isolar Aposto (com ênfase)",
+      "exemplo_de_uso": "Aquele homem — um verdadeiro herói — salvou a criança.",
+      "observacoes": "Confere mais destaque ao aposto do que a vírgula."
+    }
+  },
+  {
+    "model": "gramatica.mapeamentofuncao",
+    "pk": 25,
+    "fields": {
+      "sinal": 7,
+      "estrutura": 19,
+      "funcao_gramatical": "Isolar Oração Intercalada (com ênfase)",
+      "exemplo_de_uso": "Ele correu — e correu muito — para pegar o ônibus.",
+      "observacoes": "Similar aos parênteses, mas com mais ênfase."
+    }
+  },
+  {
+    "model": "gramatica.mapeamentofuncao",
+    "pk": 26,
+    "fields": {
+      "sinal": 8,
+      "estrutura": 19,
+      "funcao_gramatical": "Intercalar Informação Acessória (Explicação)",
+      "exemplo_de_uso": "A ONU (Organização das Nações Unidas) foi fundada em 1945.",
+      "observacoes": "Usado para explicações, apartes ou dados que fogem ao fluxo principal do texto."
+    }
+  },
+  {
+    "model": "gramatica.mapeamentofuncao",
+    "pk": 27,
+    "fields": {
+      "sinal": 8,
+      "estrutura": 19,
+      "funcao_gramatical": "Intercalar Comentário ou Apartes",
+      "exemplo_de_uso": "O réu (um homem visivelmente abalado) começou seu depoimento.",
+      "observacoes": "Indica um comentário lateral do narrador ou autor."
+    }
+  },
+  {
+    "model": "gramatica.mapeamentofuncao",
+    "pk": 28,
+    "fields": {
+      "sinal": 9,
+      "estrutura": 20,
+      "funcao_gramatical": "Indicar Intervenção em Citação (Acréscimo)",
+      "exemplo_de_uso": "Ela [a professora] disse que a prova seria adiada.",
+      "observacoes": "Usado para adicionar informação que não estava no texto original, mas é necessária para o contexto."
+    }
+  },
+  {
+    "model": "gramatica.mapeamentofuncao",
+    "pk": 29,
+    "fields": {
+      "sinal": 9,
+      "estrutura": 20,
+      "funcao_gramatical": "Indicar Intervenção em Citação (Comentário)",
+      "exemplo_de_uso": "O autor afirma que 'tal fenômeno é raro' [grifo nosso].",
+      "observacoes": "Usado para comentários editoriais ou do transcriptor."
+    }
+  },
+  {
+    "model": "gramatica.mapeamentofuncao",
+    "pk": 30,
+    "fields": {
+      "sinal": 10,
+      "estrutura": 14,
+      "funcao_gramatical": "Isolar Citação Direta",
+      "exemplo_de_uso": "Como disse Descartes: \"Penso, logo existo\".",
+      "observacoes": "Marca o início e o fim da fala exata de alguém."
+    }
+  },
+  {
+    "model": "gramatica.mapeamentofuncao",
+    "pk": 31,
+    "fields": {
+      "sinal": 10,
+      "estrutura": 21,
+      "funcao_gramatical": "Destacar Estrangeirismo, Neologismo ou Gíria",
+      "exemplo_de_uso": "O \"feedback\" da equipe foi positivo.",
+      "observacoes": "Indica que a palavra não pertence inteiramente à norma culta padrão."
+    }
+  },
+  {
+    "model": "gramatica.mapeamentofuncao",
+    "pk": 32,
+    "fields": {
+      "sinal": 10,
+      "estrutura": 22,
+      "funcao_gramatical": "Indicar Ironia ou Destaque Semântico",
+      "exemplo_de_uso": "Ele foi muito \"educado\" comigo, gritou o tempo todo.",
+      "observacoes": "Indica que a palavra está sendo usada em sentido oposto ou com destaque."
+    }
+  },
+  {
+    "model": "gramatica.mapeamentofuncao",
+    "pk": 33,
+    "fields": {
+      "sinal": 11,
+      "estrutura": 23,
+      "funcao_gramatical": "Indicar Interrupção de Pensamento (Hesitação)",
+      "exemplo_de_uso": "Eu queria dizer que... ah, deixa para lá.",
+      "observacoes": "Sinaliza dúvida, hesitação ou um pensamento incompleto."
+    }
+  },
+  {
+    "model": "gramatica.mapeamentofuncao",
+    "pk": 34,
+    "fields": {
+      "sinal": 11,
+      "estrutura": 20,
+      "funcao_gramatical": "Indicar Omissão de Trecho (em Citação)",
+      "exemplo_de_uso": "O autor escreveu que \"todos os homens [...] são criados iguais\".",
+      "observacoes": "Frequentemente usado com colchetes: [...]"
+    }
+  },
+  {
+    "model": "gramatica.mapeamentofuncao",
+    "pk": 35,
+    "fields": {
+      "sinal": 11,
+      "estrutura": 19,
+      "funcao_gramatical": "Sugerir Continuidade ou Prolongamento",
+      "exemplo_de_uso": "O eco da sua voz desapareceu lentamente...",
+      "observacoes": "Usado como recurso estilístico."
+    }
+  },
+  {
+    "model": "gramatica.mapeamentofuncao",
+    "pk": 36,
+    "fields": {
+      "sinal": 12,
+      "estrutura": 24,
+      "funcao_gramatical": "Indicar Alternância (e/ou)",
+      "exemplo_de_uso": "Prezado(a) Senhor(a), peço que verifique o andamento/status do processo.",
+      "observacoes": "Funciona como 'ou', 'e/ou'."
+    }
+  },
+  {
+    "model": "gramatica.mapeamentofuncao",
+    "pk": 37,
+    "fields": {
+      "sinal": 12,
+      "estrutura": 10,
+      "funcao_gramatical": "Separar Datas Numéricas",
+      "exemplo_de_uso": "A data limite é 13/11/2025.",
+      "observacoes": "Separa dia, mês e ano."
+    }
+  },
+  {
+    "model": "gramatica.mapeamentofuncao",
+    "pk": 38,
+    "fields": {
+      "sinal": 1,
+      "estrutura": 6,
+      "funcao_gramatical": "Separar Oração Coordenada Sindética (Explicativa)",
+      "exemplo_de_uso": "Estude, pois a prova será difícil.",
+      "observacoes": "Obrigatória antes de 'pois', 'porque' (explicativos) quando iniciam a oração."
+    }
+  },
+  {
+    "model": "gramatica.mapeamentofuncao",
+    "pk": 39,
+    "fields": {
+      "sinal": 1,
+      "estrutura": 19,
+      "funcao_gramatical": "Isolar Expressões Explicativas ou Corretivas",
+      "exemplo_de_uso": "O prazo termina hoje, ou seja, à meia-noite.",
+      "observacoes": "Uso com 'isto é', 'ou seja', 'aliás', 'a saber', etc."
+    }
+  },
+  {
+    "model": "gramatica.mapeamentofuncao",
+    "pk": 40,
+    "fields": {
+      "sinal": 5,
+      "estrutura": 22,
+      "funcao_gramatical": "Indicar Dúvida ou Surpresa (Uso Estilístico)",
+      "exemplo_de_uso": "Ele disse que terminou o projeto em um dia (?).",
+      "observacoes": "Geralmente entre parênteses, indica ceticismo sobre a informação anterior."
+    }
+  },
+  {
+    "model": "gramatica.mapeamentofuncao",
+    "pk": 41,
+    "fields": {
+      "sinal": 6,
+      "estrutura": 22,
+      "funcao_gramatical": "Indicar Ironia (Uso Estilístico)",
+      "exemplo_de_uso": "Que inteligente(!)",
+      "observacoes": "Geralmente entre parênteses, indica ironia."
+    }
+  }
+]

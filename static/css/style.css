@@ -1,0 +1,269 @@
+/* static/css/style.css */
+
+/* --------------------------------- */
+/* Configurações Globais (Base)
+/* --------------------------------- */
+body {
+    /* Usando uma fonte serifada para leitura, mais confortável */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.7; /* Mais espaço entre linhas */
+
+    /* Fundo 'off-white' para o corpo, reduzindo a fadiga ocular */
+    background-color: #f5f5f0;
+
+    /* Texto em cinza escuro, não preto puro */
+    color: #3a3a3a;
+    margin: 0;
+    padding: 0;
+}
+
+/* --------------------------------- */
+/* Tipografia: Fontes de UI
+/* --------------------------------- */
+/* Usamos sans-serif para botões, navegação e títulos - mais fácil de ler em UI */
+h1, h2, h3, .main-nav a, .btn-submit, .site-header p {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 600;
+}
+
+/* --------------------------------- */
+/* Layout (Container)
+/* --------------------------------- */
+.container {
+    /* Linhas de texto mais curtas são melhores para leitura */
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+/* --------------------------------- */
+/* Header
+/* --------------------------------- */
+.site-header {
+    /* Um azul escuro, "livraria", no lugar do verde */
+    background-color: #2c3e50;
+    color: #ffffff;
+    padding: 2rem 1rem;
+    text-align: center;
+    /* Um pequeno acento de cor quente */
+    border-bottom: 4px solid #a65f46;
+}
+.site-header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+.site-header h1 a {
+    color: white;
+    text-decoration: none;
+}
+.site-header p {
+    margin: 0;
+    font-style: italic;
+    opacity: 0.9;
+    font-weight: 300;
+}
+
+/* --------------------------------- */
+/* Navegação
+/* --------------------------------- */
+.main-nav {
+    /* Um azul um pouco mais claro que o header */
+    background-color: #34495e;
+    border-top: 1px solid #4a6279;
+    margin-top: 1.5rem;
+}
+.main-nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+.main-nav li {
+    margin: 0;
+}
+.main-nav a {
+    display: block;
+    padding: 0.8rem 1.5rem;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.2s ease;
+}
+.main-nav a:hover {
+    background-color: #4a6279;
+}
+
+/* --------------------------------- */
+/* Cards de Regras (O mais importante)
+/* --------------------------------- */
+.regra-card {
+    /* O FUNDO CREME (sépia) para leitura */
+    background-color: #fdfdf9;
+
+    /* Bordas e sombras mais suaves */
+    border: 1px solid #ebebeb;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    padding: 1.5rem 2rem; /* Mais preenchimento lateral */
+    box-shadow: 0 3px 6px rgba(0,0,0,0.03);
+    transition: box-shadow 0.3s ease;
+}
+.regra-card:hover {
+    box-shadow: 0 5px 12px rgba(0,0,0,0.06);
+}
+
+.regra-card h2 {
+    margin: 0;
+    /* Cor de acento quente (terracota) */
+    color: #a65f46;
+}
+.regra-card h2 .sinal-grafico {
+    font-size: 2.5rem;
+    font-family: "Times New Roman", Times, serif;
+    margin-right: 10px;
+}
+
+.regra-card .funcao {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 1rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-style: italic;
+}
+
+.regra-card .exemplo {
+    font-family: "Courier New", Courier, monospace;
+    /* Fundo do exemplo combinando com o fundo do body */
+    background-color: #f5f5f0;
+    border: 1px solid #eee;
+    padding: 1rem;
+    border-radius: 4px;
+    color: #5d4037; /* Texto do exemplo em marrom escuro */
+}
+
+.regra-card .observacoes {
+    font-size: 0.95rem;
+    color: #666;
+    border-top: 1px dashed #ccc;
+    padding-top: 0.5rem;
+    margin-top: 1rem;
+    font-style: italic;
+}
+
+/* --------------------------------- */
+/* Página do Analisador
+/* --------------------------------- */
+.analisador-form {
+    background-color: #fdfdf9; /* Combinando com os cards */
+    padding: 1.5rem 2rem;
+    border-radius: 8px;
+    border: 1px solid #ebebeb;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.03);
+}
+
+.analisador-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.analisador-form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1.1rem; /* Texto maior para digitação */
+    font-family: Georgia, 'Times New Roman', Times, serif; /* Mesmo do body */
+    box-sizing: border-box;
+    background-color: #fff; /* Deixamos o textarea branco para digitação */
+}
+
+.btn-submit {
+    background-color: #a65f46; /* Acento quente */
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background-color 0.2s ease;
+}
+.btn-submit:hover {
+    background-color: #8c4f3a; /* Tom mais escuro */
+}
+
+.resultados-container {
+    margin-top: 2rem;
+    border-top: 2px solid #a65f46;
+    padding-top: 1.5rem;
+}
+
+.lista-sinais-encontrados {
+    list-style: none;
+    padding-left: 0;
+}
+.lista-sinais-encontrados li {
+    background-color: #fdfdf9; /* Fundo creme */
+    padding: 1rem;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+}
+.lista-sinais-encontrados .sinal-grafico {
+    font-size: 1.8rem;
+    font-family: "Times New Roman", Times, serif;
+    margin-right: 10px;
+    color: #a65f46; /* Acento quente */
+    font-weight: bold;
+}
+
+/* --------------------------------- */
+/* Footer
+/* --------------------------------- */
+.site-footer {
+    text-align: center;
+    padding: 1.5rem 1rem;
+    margin-top: 2rem;
+    background-color: #2c3e50; /* Combinando com o header */
+    color: #bdc3c7; /* Cor mais clara para ler no azul */
+    font-size: 0.9rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+.site-header h1 {
+    margin: 0;
+    font-size: 2.5rem; /* Tamanho original do texto do título */
+    font-weight: 700;
+    margin-bottom: 0.5rem; /* Espaço para o subtítulo */
+}
+
+/* 1. Transforma o link <a> em um container flex */
+.site-header h1 a {
+    display: inline-flex; /* Usa 'inline-flex' para que o container se alinhe ao centro */
+    align-items: center;  /* Alinha a logo e o texto verticalmente */
+    justify-content: center; /* Centraliza o grupo (útil se o h1 for 'block') */
+    text-decoration: none;
+    color: white; /* Cor do texto do h1 */
+}
+
+/* 2. Estilo da logo (dentro do flex) */
+.site-logo {
+    max-height: 150px; /* Controla o tamanho da logo pela altura */
+    width: auto;      /* Mantém a proporção */
+    margin-right: 15px; /* Espaço entre a logo e o texto */
+
+    /* Remove as regras de centralização anteriores (display:block, margin:auto) */
+    display: inline;
+    margin-left: 0;
+    margin-right: 15px;
+    margin-bottom: 0;
+}
+
+/* 3. Garante que o span (texto) se comporte bem */
+.site-header h1 a span {
+    display: inline-block; /* Garante que o span é tratado como um bloco na linha */
+}

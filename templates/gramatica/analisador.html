@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% load static %}
+
+<!-- Substitui o bloco 'title' -->
+{% block title %}Analisador de Pontuação - {{ block.super }}{% endblock %}
+
+<!-- Substitui o bloco 'content' -->
+{% block content %}
+
+    <h1>Analisador de Pontuação</h1>
+    <p>Insira uma frase ou parágrafo abaixo para identificar os sinais de pontuação do nosso catálogo que foram utilizados.</p>
+
+    <!-- Formulário de Análise -->
+    <form method="POST" action="{% url 'gramatica:analisador' %}" class="analisador-form">
+        {% csrf_token %}
+        <label for="texto_usuario">Seu Texto:</label>
+        
+        <!-- O '{{ texto_usuario }}' garante que o texto não se apague após o envio -->
+        <textarea name="texto_usuario" id="texto_usuario" rows="8">{{ texto_usuario }}</textarea>
+        
+        <button type="submit" class="btn-submit">Analisar Texto</button>
+    </form>
+
+    <!-- Seção de Resultados -->
+    {% if request.method == 'POST' %}
+        <div class="resultados-container">
+            <h2>Resultados da Análise</h2>
+
+            {% if sinais_encontrados %}
+                <p>Encontramos os seguintes sinais de pontuação do nosso catálogo no seu texto:</p>
+                <ul class="lista-sinais-encontrados">
+                    {% for sinal in sinais_encontrados %}
+                        <li>
+                            <span class="sinal-grafico">{{ sinal.sinal_grafico }}</span>
+                            <strong>{{ sinal.nome }}</strong>: 
+                            {{ sinal.descricao }}
+                        </li>
+                    {% endfor %}
+                </ul>
+            {% else %}
+                <p>Nenhum sinal de pontuação do nosso catálogo foi encontrado no texto fornecido.</p>
+            {% endif %}
+        </div>
+    {% endif %}
+
+{% endblock %}

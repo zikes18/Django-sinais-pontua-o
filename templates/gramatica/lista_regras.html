@@ -1,0 +1,34 @@
+{% extends 'base.html' %}{% block title %}Regras de Pontuação - {{ block.super }}{% endblock %}
+
+{% block content %}
+
+    <h1>Todas as Regras de Pontuação</h1>
+    <hr>
+
+    {% for regra in mapeamentos %}
+        <article class="regra-card">
+            <h2>
+                <span class="sinal-grafico">{{ regra.sinal.sinal_grafico }}</span>
+                {{ regra.sinal.nome }}
+            </h2>
+            
+            <p class="funcao">
+                <strong>Função:</strong> {{ regra.funcao_gramatical }} 
+                (<em>Estrutura: {{ regra.estrutura.nome }}</em>)
+            </p>
+            
+            <div class="exemplo">
+                <strong>Exemplo:</strong> {{ regra.exemplo_de_uso }}
+            </div>
+            
+            {% if regra.observacoes %}
+                <p class="observacoes">
+                    <strong>Obs:</strong> {{ regra.observacoes }}
+                </p>
+            {% endif %}
+        </article>
+    {% empty %}
+        <p>Nenhuma regra de pontuação cadastrada ainda.</p>
+    {% endfor %}
+
+{% endblock %}

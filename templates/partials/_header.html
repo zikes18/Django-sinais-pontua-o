@@ -1,0 +1,24 @@
+{% load static %}
+<header class="site-header">
+    <h1>
+        <a href="{% url 'gramatica:lista_regras' %}">
+            <img src="{% static 'img/logo.png' %}" alt="Logo Catálogo Gramatical" class="site-logo">
+
+            <span>Catálogo de Pontuação</span>
+        </a>
+    </h1>
+    <p>Validando a relação entre o signo gráfico e sua função gramatical.</p>
+
+
+    <nav class="main-nav">
+        <ul>
+            <li>
+                <a href="{% url 'gramatica:lista_regras' %}">Catálogo de Regras</a>
+            </li>
+            <li>
+                <a href="{% url 'gramatica:analisador' %}">Analisador de Texto</a>
+            </li>
+        </ul>
+    </nav>
+
+</header>
